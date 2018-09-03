@@ -16,38 +16,15 @@
       <a class="navbar-brand" href="#">XING</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Cities</a></li>
-      <li><a href="/best">Best</a></li>
-      <li><a href="#">Update</a></li>
+      <li><a href="/">Cities</a></li>
+      <li class="active"><a href="#">Best</a></li>
+      <li><a href="/weather/update">Update</a></li>
     </ul>
   </div>
 </nav>
 
 <div class="container">
-  
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>City Name</th>
-        <th>Temperature</th>
-        <th>Wind</th>
-        <th>Humidity</th>
-      </tr>
-    </thead>
-    <tbody>
-         @foreach ($cities as $city)
-            <tr>
-                <td>{{($loop->index)+1}}</td>
-                <td>{{$city['name']}}</td>
-                <td>{{$city['temp']}}</td>
-                <td>{{$city['wind']}}</td>
-                <td>{{$city['humidity']}}</td>
-            </tr>
-        @endforeach
-     
-    </tbody>
-  </table>
+    <p style="font-size: 26px" class="text-center"><mark>{{$city}}</mark> has the best Weather </p>
 </div>
 
 </body>

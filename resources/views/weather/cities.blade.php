@@ -17,8 +17,8 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Cities</a></li>
-      <li><a href="/best">Best</a></li>
-      <li><a href="#">Update</a></li>
+      <li><a href="/weather/best">Best</a></li>
+      <li><a href="/weather/update">Update</a></li>
     </ul>
   </div>
 </nav>
