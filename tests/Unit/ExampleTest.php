@@ -16,4 +16,11 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    public function testInsertCitiesWeather()
+    {
+    	$this->get("/weather/update");
+
+    	$this->assertDatabaseHas("cities", ["name" => "London"]);
+    }
 }
